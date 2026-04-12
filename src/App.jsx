@@ -53,6 +53,16 @@ const SKILLS = {
 
 const PROJECTS = [
   {
+    id: 8,
+    name: 'Tradutor Online',
+    desc: 'Tradutor inteligente com suporte a múltiplos idiomas, detecção automática e histórico. Interface elegante com tema claro e escuro, além de layout responsivo.',
+    tags: ['HTML5', 'CSS3', 'JavaScript Avançado (Vanilla JS - ES6+)', 'Uso de Variáveis CSS (:root)', 'APIs'],
+    image: '/tradutor_cover.jpg',
+    imageStyle: { objectFit: 'cover', objectPosition: 'center 20%', transform: 'scale(1.15)', transformOrigin: 'center center' }, 
+    live: 'https://pj-tradutor.vercel.app',
+    github: 'https://github.com/silvajeanderson165-creator/pj-tradutor',
+  },
+  {
     id: 7,
     name: 'Gerador de Miniaturas do YouTube',
     desc: 'Criador de miniaturas virais com Inteligência Artificial para alavancar taxa de cliques (CTR). Backend integrado para geração de imagens rápido e design responsivo.',
@@ -668,7 +678,7 @@ function Projects() {
         {PROJECTS.map((project, i) => (
           <div className="project-card" key={project.id}>
             <div className="project-image-container">
-              <img src={project.image} alt={project.name} className="project-image" loading="lazy" />
+              <img src={project.image} alt={project.name} className="project-image" style={project.imageStyle || {}} loading="lazy" />
               <div className="project-image-overlay">
                 <a href={project.live} className="project-overlay-btn" target="_blank" rel="noopener noreferrer">
                   <ExternalLink size={12} /> Live
