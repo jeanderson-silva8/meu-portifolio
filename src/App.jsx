@@ -140,7 +140,7 @@ const EXPERIENCE = [
   },
   {
     role: 'Frontend Developer',
-    company: 'Transição de Carreira & Projetos Práticos',
+    company: 'Especialização em Frontend & UI/UX',
     desc: 'Desenvolvimento intensivo de projetos web focados em UX/UI modernas. Criação de portfólios interativos, componentes reutilizáveis e interfaces responsivas. Implementação de animações CSS avançadas, otimização de performance e boas práticas de acessibilidade. Conquistas: +10 projetos desenvolvidos, domínio de animações CSS, design responsivo mobile-first',
     active: false,
   },
