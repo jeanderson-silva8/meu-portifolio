@@ -53,6 +53,16 @@ const SKILLS = {
 
 const PROJECTS = [
   {
+    id: 9,
+    name: 'Mario Bros',
+    desc: 'Recriação de interface interativa inspirada no clássico jogo Super Mario Bros, focando em animações, responsividade e engajamento visual. Desenvolvido para aprimorar habilidades fundamentais de frontend.',
+    tags: ['HTML5', 'CSS3 Web Animation', 'JavaScript Vanilla', 'DOM Manipulation'],
+    image: '/mario_cover.jpg',
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    live: 'https://mario-bros-seven.vercel.app',
+    github: 'https://github.com/silvajeanderson165-creator/mario-bros',
+  },
+  {
     id: 8,
     name: 'Tradutor Online',
     desc: 'Tradutor inteligente com suporte a múltiplos idiomas, detecção automática e histórico. Interface elegante com tema claro e escuro, além de layout responsivo.',
