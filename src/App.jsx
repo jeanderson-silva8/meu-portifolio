@@ -53,6 +53,18 @@ const SKILLS = {
 
 const PROJECTS = [
   {
+    id: 10,
+    name: 'Dasheborde para Você se Organizar',
+    desc: 'Dashboard completo e profissional de gerenciamento de tarefas, com autenticação JWT, banco de dados em tempo real e design premium em Dark Mode.',
+    tags: [
+      'React v19', 'Vite', 'Node.js', 'Express.js v5', 'MongoDB Atlas', 'JWT', 'Axios', 'Lucide React', 'Vercel Serverless'
+    ],
+    image: '/organiza_cover.jpeg',
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    live: 'https://organiza-dashboard-full.vercel.app/login',
+    github: 'https://github.com/silvajeanderson165-creator/organiza-dashboard-full',
+  },
+  {
     id: 9,
     name: 'Mario Bros',
     desc: 'Recriação de interface interativa inspirada no clássico jogo Super Mario Bros, focando em animações, responsividade e engajamento visual. Desenvolvido para aprimorar habilidades fundamentais de frontend.',
