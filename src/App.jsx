@@ -53,6 +53,16 @@ const SKILLS = {
 
 const PROJECTS = [
   {
+    id: 12,
+    name: 'Nord Nails Studio',
+    desc: 'Landing page premium para estúdio de unhas e beleza. Foco em estética minimalista, alta conversão e agendamento prático.',
+    tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+    image: '/nord_nails_cover.jpg',
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    live: 'https://nord-nails.vercel.app',
+    github: 'https://github.com/silvajeanderson165-creator/nord-nails',
+  },
+  {
     id: 11,
     name: 'Restaurante La Maison',
     desc: 'Site de restaurante de alta gastronomia com design cinematográfico e premium. Experiência de usuário fluida e interativa com animações avançadas.',
