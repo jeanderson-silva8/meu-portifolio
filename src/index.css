@@ -936,6 +936,39 @@ section {
   position: relative;
 }
 
+.project-card.project-featured {
+  grid-column: 1 / -1;
+  border-color: var(--accent);
+  box-shadow: 0 0 30px rgba(108, 99, 255, 0.15);
+}
+
+.project-card.project-featured .project-image {
+  height: 380px;
+}
+
+@media (max-width: 768px) {
+  .project-card.project-featured .project-image {
+    height: 250px;
+  }
+}
+
+.project-ribbon {
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  background: var(--accent);
+  color: var(--bg-primary);
+  padding: 5px 40px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transform: rotate(45deg);
+  z-index: 10;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.05em;
+}
+
 .project-card:hover {
   border-color: var(--border-hover);
   transform: translateY(-6px);

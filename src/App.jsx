@@ -53,12 +53,23 @@ const SKILLS = {
 
 const PROJECTS = [
   {
+    id: 13,
+    name: 'Lumina Analytics Engine: Arquitetura SaaS Escalonável com Processamento Massivo de Dados',
+    desc: 'Desenvolvi do zero um Motor Analítico Desacoplado capaz de injetar e processar instantaneamente dados de assinaturas ao longo de um período de 3 anos (Data Modeling robusto). Utilizei a força nativa do banco de dados relacional e a flexibilidade do GraphQL para plugar um Frontend reativo moderno e blindado desenhado para o modelo corporativo.',
+    tags: ['React', 'TypeScript', 'Python', 'Django', 'PostgreSQL', 'GraphQL', 'Docker', 'CI/CD'],
+    image: 'https://storage.googleapis.com/firecrawl-scrape-media/screenshot-a3af6176-1bb5-42b3-bbe5-f44e792d5a23.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1777204650&Signature=fENtqmkbrlB6Ixv40VhL9mBZTjg7a63r8%2BhMPZkQp%2FIcXDXbly%2BV9RsKSvGCcqAFO92uCZg3wcbF1XzzqEe4F4DourMTZIzRVtgLT7qd2m1yTJEri91zCSpVimz0lS%2FHsLuWICdLG3Ihdib1B6JH4fkg4Q6VodLP9oyzVtxErjMIjT0ZTiSReX8zAJ2MLg9NuIPQrf5fQoVs%2BSHUS3e%2F%2FWOkTvQVW0cfdc3qFcS%2Bg46BrnTE%2B9GpfIhGaQuCKswVRi%2Bfx5CrkjjH1sUqHBOhVf%2B1M2JHFMdCihWbHyjRuQkaTy5JFR1S9WXMjHoR0BNb6H8NDTcLvKobWS7D3krWNg%3D%3D',
+    imageStyle: { objectFit: 'cover', objectPosition: 'top center' },
+    live: 'https://marketing-site-black-pi.vercel.app',
+    github: 'https://github.com/silvajeanderson165-creator/Lumina-Booking-SaaS',
+    featured: true
+  },
+  {
     id: 12,
     name: 'Nord Nails Studio',
     desc: 'Landing page premium para estúdio de unhas e beleza. Foco em estética minimalista, alta conversão e agendamento prático.',
     tags: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
     image: '/nord_nails_cover.jpg',
-    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://nord-nails.vercel.app',
     github: 'https://github.com/silvajeanderson165-creator/nord-nails',
   },
@@ -68,7 +79,7 @@ const PROJECTS = [
     desc: 'Site de restaurante de alta gastronomia com design cinematográfico e premium. Experiência de usuário fluida e interativa com animações avançadas.',
     tags: ['React', 'TypeScript', 'Vite', 'GSAP', 'Framer Motion', 'Zustand', 'Tailwind CSS'],
     image: '/la_maison_cover.png',
-    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://sitemd-sooty.vercel.app',
     github: 'https://github.com/silvajeanderson165-creator/la-maison-restaurant-site',
   },
@@ -80,7 +91,7 @@ const PROJECTS = [
       'React v19', 'Vite', 'Node.js', 'Express.js v5', 'MongoDB Atlas', 'JWT', 'Axios', 'Lucide React', 'Vercel Serverless'
     ],
     image: '/organiza_cover.jpeg',
-    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://organiza-dashboard-full.vercel.app/login',
     github: 'https://github.com/silvajeanderson165-creator/organiza-dashboard-full',
   },
@@ -90,7 +101,7 @@ const PROJECTS = [
     desc: 'Recriação de interface interativa inspirada no clássico jogo Super Mario Bros, focando em animações, responsividade e engajamento visual. Desenvolvido para aprimorar habilidades fundamentais de frontend.',
     tags: ['HTML5', 'CSS3 Web Animation', 'JavaScript Vanilla', 'DOM Manipulation'],
     image: '/mario_cover.jpg',
-    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://mario-bros-seven.vercel.app',
     github: 'https://github.com/silvajeanderson165-creator/mario-bros',
   },
@@ -100,7 +111,7 @@ const PROJECTS = [
     desc: 'Tradutor inteligente com suporte a múltiplos idiomas, detecção automática e histórico. Interface elegante com tema claro e escuro, além de layout responsivo.',
     tags: ['HTML5', 'CSS3', 'JavaScript Avançado (Vanilla JS - ES6+)', 'Uso de Variáveis CSS (:root)', 'APIs'],
     image: '/print_tradutor.jpg',
-    imageStyle: { objectFit: 'cover', objectPosition: 'center' }, 
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://pj-tradutor.vercel.app',
     github: 'https://github.com/silvajeanderson165-creator/pj-tradutor',
   },
@@ -110,7 +121,7 @@ const PROJECTS = [
     desc: 'Criador de miniaturas virais com Inteligência Artificial para alavancar taxa de cliques (CTR). Backend integrado para geração de imagens rápido e design responsivo.',
     tags: [
       'React v19', 'Vite v8', 'JS/JSX ES6+', 'HTML5', 'CSS3 Vanilla',
-      'Node.js', 'Express v5', 'Cors', '@fal-ai/client', 
+      'Node.js', 'Express v5', 'Cors', '@fal-ai/client',
       'Lucide-React', 'ESLint', 'Git/GitHub', 'Vercel'
     ],
     image: '/esaa_cover.jpg',
@@ -718,8 +729,9 @@ function Projects() {
 
       <div className="projects-grid">
         {PROJECTS.map((project, i) => (
-          <div className="project-card" key={project.id}>
+          <div className={`project-card ${project.featured ? 'project-featured' : ''}`} key={project.id}>
             <div className="project-image-container">
+              {project.featured && <div className="project-ribbon">⭐ Destaque</div>}
               <img src={project.image} alt={project.name} className="project-image" style={project.imageStyle || {}} loading="lazy" />
               <div className="project-image-overlay">
                 <a href={project.live} className="project-overlay-btn" target="_blank" rel="noopener noreferrer">
