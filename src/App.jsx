@@ -57,10 +57,25 @@ const PROJECTS = [
     name: 'Lumina Analytics Engine: Arquitetura SaaS Escalonável com Processamento Massivo de Dados',
     desc: 'Desenvolvi do zero um Motor Analítico Desacoplado capaz de injetar e processar instantaneamente dados de assinaturas ao longo de um período de 3 anos (Data Modeling robusto). Utilizei a força nativa do banco de dados relacional e a flexibilidade do GraphQL para plugar um Frontend reativo moderno e blindado desenhado para o modelo corporativo.',
     tags: ['React', 'TypeScript', 'Python', 'Django', 'PostgreSQL', 'GraphQL', 'Docker', 'GitHub Actions', 'CI/CD', 'Linux / CLI'],
-    image: 'https://storage.googleapis.com/firecrawl-scrape-media/screenshot-a3af6176-1bb5-42b3-bbe5-f44e792d5a23.png?GoogleAccessId=scrape-bucket-accessor%40firecrawl.iam.gserviceaccount.com&Expires=1777204650&Signature=fENtqmkbrlB6Ixv40VhL9mBZTjg7a63r8%2BhMPZkQp%2FIcXDXbly%2BV9RsKSvGCcqAFO92uCZg3wcbF1XzzqEe4F4DourMTZIzRVtgLT7qd2m1yTJEri91zCSpVimz0lS%2FHsLuWICdLG3Ihdib1B6JH4fkg4Q6VodLP9oyzVtxErjMIjT0ZTiSReX8zAJ2MLg9NuIPQrf5fQoVs%2BSHUS3e%2F%2FWOkTvQVW0cfdc3qFcS%2Bg46BrnTE%2B9GpfIhGaQuCKswVRi%2Bfx5CrkjjH1sUqHBOhVf%2B1M2JHFMdCihWbHyjRuQkaTy5JFR1S9WXMjHoR0BNb6H8NDTcLvKobWS7D3krWNg%3D%3D',
+    image: '/lumina_analytics_cover.png',
     imageStyle: { objectFit: 'cover', objectPosition: 'top center' },
     live: 'https://marketing-site-black-pi.vercel.app',
     github: 'https://github.com/silvajeanderson165-creator/Lumina-Booking-SaaS',
+    featured: true
+  },
+  {
+    id: 14,
+    name: 'NEXUS PORTAL — Experiência 3D Interativa com WebGL & Shaders Customizados',
+    desc: 'Construí do zero uma experiência web 3D imersiva com Three.js e React Three Fiber. O artefato central é um TorusKnot com ShaderMaterial GLSL customizado (iridescência Fresnel + simplex noise) renderizado via EffectComposer com UnrealBloomPass. Implementei controle orbital com coordenadas esféricas, sistema de partículas instanciadas (InstancedMesh) com golden angle, e arquitetura de estado Zustand para bridge DOM↔R3F. Pipeline de post-processing manual com bloom adaptativo e scroll suave Lenis.',
+    tags: [
+      'React 19', 'TypeScript', 'Three.js', 'React Three Fiber',
+      'GLSL Shaders', 'WebGL', 'Zustand', 'GSAP', 'Lenis',
+      'Post-Processing', 'Vite', 'Tailwind CSS'
+    ],
+    image: '/nexus_portal_cover.png',
+    imageStyle: { objectFit: 'cover', objectPosition: 'center' },
+    live: 'https://nexus-portal-xxx.vercel.app',
+    github: 'https://github.com/silvajeanderson165-creator/nexus-portal',
     featured: true
   },
   {
