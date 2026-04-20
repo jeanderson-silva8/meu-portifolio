@@ -65,8 +65,8 @@ const PROJECTS = [
   },
   {
     id: 14,
-    name: 'NEXUS PORTAL — Experiência 3D Interativa com WebGL & Shaders Customizados',
-    desc: 'Construí do zero uma experiência web 3D imersiva com Three.js e React Three Fiber. O artefato central é um TorusKnot com ShaderMaterial GLSL customizado (iridescência Fresnel + simplex noise) renderizado via EffectComposer com UnrealBloomPass. Implementei controle orbital com coordenadas esféricas, sistema de partículas instanciadas (InstancedMesh) com golden angle, e arquitetura de estado Zustand para bridge DOM↔R3F. Pipeline de post-processing manual com bloom adaptativo e scroll suave Lenis.',
+    name: 'NEXUS PORTAL — Experiência 3D Interativa',
+    desc: 'Desenvolvimento de uma experiência web 3D interativa de alto impacto visual. O projeto combina React e Three.js para apresentar um ambiente cinematográfico imersivo, focado na mais alta fluidez e qualidade gráfica. Demonstra profundo domínio na construção de ambientes responsivos em tempo real, renderização otimizada e engenharia visual diretamente no navegador.',
     tags: [
       'React 19', 'TypeScript', 'Three.js', 'React Three Fiber',
       'GLSL Shaders', 'WebGL', 'Zustand', 'GSAP', 'Lenis',
