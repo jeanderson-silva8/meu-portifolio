@@ -1,16 +1,63 @@
-# React + Vite
+# 🧑‍💻 Jeanderson Silva — Portfólio Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Portfólio profissional de desenvolvedor **Full Stack**, construído com **React** e **Vite** — vitrine de projetos, habilidades e experiências com design moderno e responsivo.
 
-Currently, two official plugins are available:
+[![Acessar Portfólio](https://img.shields.io/badge/🌐_ACESSAR_PORTFÓLIO-meu--portifolio.vercel.app-8B5CF6?style=for-the-badge)](https://meu-portifolio-two-ochre.vercel.app)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![CSS3](https://img.shields.io/badge/CSS3-Custom-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🎯 Sobre o Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Portfólio pessoal interativo que apresenta minha trajetória como **Desenvolvedor Full Stack** no Brasil 🇧🇷. Projetado para impressionar recrutadores e clientes, combinando design premium com navegação fluida.
 
-## Expanding the ESLint configuration
+### ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🖼️ **Showcase de Projetos** — Cards interativos com preview, descrição e links dos projetos
+- 🎨 **Design Premium** — Visual escuro e moderno com acentos em roxo/violeta
+- 📱 **Responsivo** — Experiência perfeita em qualquer dispositivo
+- ⚡ **Performance** — Carregamento instantâneo com Vite
+- 🧩 **Componentizado** — Arquitetura React limpa e reutilizável
+- 🔗 **Links Diretos** — Acesso rápido ao GitHub, LinkedIn e projetos ao vivo
+
+---
+
+## 🛠️ Tecnologias
+
+| Tech | Uso |
+|---|---|
+| **React 19** | SPA com renderização reativa |
+| **JavaScript ES6+** | Lógica de componentes e interações |
+| **CSS3 Custom** | Design artesanal sem frameworks CSS |
+| **Vite** | Bundler com HMR ultra-rápido |
+
+---
+
+## 🚀 Como Rodar
+
+```bash
+git clone https://github.com/silvajeanderson165-creator/meu-portifolio.git
+cd meu-portifolio
+npm install
+npm run dev
+```
+
+---
+
+## 📂 Projetos Destacados
+
+| Projeto | Descrição |
+|---|---|
+| 🔮 **NEXUS PORTAL** | Experiência 3D interativa com Three.js e shaders customizados |
+| 📊 **Lumina Analytics** | Motor de análise de dados com visualizações avançadas |
+| 🔍 **TrendScope** | Curadoria inteligente de tendências com API de busca em tempo real |
+| 📋 **ORGANIZA** | Dashboard Full Stack MERN com autenticação JWT |
+
+---
+
+## 📄 Licença
+
+Desenvolvido com 💜 por **Jeanderson Silva** — Full Stack Developer
