@@ -113,7 +113,7 @@ export const PROJECTS_DATA = [
   },
   {
     id: 'thumbnail-forge',
-    title: 'Thumbnail Forge',
+    title: 'Miniatura Forja AI',
     description: 'Criador de miniaturas virais com Inteligência Artificial para alavancar taxa de cliques (CTR). Backend integrado para geração de imagens rápido e design responsivo.',
     shortDescription: 'Gerador de thumbnails com IA integrada, backend Node.js para processamento e interface intuitiva para criadores de conteúdo.',
     category: 'saas',
