@@ -311,7 +311,7 @@ body::before {
   position: relative;
   overflow: hidden;
   padding: 6rem 3rem 4rem;
-  background: var(--gradient-hero);
+  background: transparent;
 }
 
 .hero-stars {
@@ -341,6 +341,15 @@ body::before {
     linear-gradient(rgba(108, 99, 255, 0.03) 1px, transparent 1px),
     linear-gradient(90deg, rgba(108, 99, 255, 0.03) 1px, transparent 1px);
   background-size: 60px 60px;
+  pointer-events: none;
+}
+
+/* ── Global Background ─────────────────────────────────────────── */
+.global-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: var(--gradient-hero);
   pointer-events: none;
 }
 
@@ -709,7 +718,7 @@ section {
 
 /* ── About / Terminal ──────────────────────────────────────── */
 .about {
-  background: var(--bg-secondary);
+  background: transparent;
 }
 
 .about-grid {
@@ -824,7 +833,7 @@ section {
 
 /* ── Skills ────────────────────────────────────────────────── */
 .skills {
-  background: var(--bg-primary);
+  background: transparent;
 }
 
 .skills-tabs {
@@ -915,7 +924,7 @@ section {
 
 /* ── Projects ──────────────────────────────────────────────── */
 .projects {
-  background: var(--bg-secondary);
+  background: transparent;
 }
 
 .projects-grid {
@@ -1080,7 +1089,7 @@ section {
 
 /* ── Experience Timeline ───────────────────────────────────── */
 .experience {
-  background: var(--bg-primary);
+  background: transparent;
 }
 
 .timeline {
@@ -1207,7 +1216,7 @@ section {
 
 /* ── Contact ───────────────────────────────────────────────── */
 .contact {
-  background: var(--bg-secondary);
+  background: transparent;
 }
 
 .contact-grid {

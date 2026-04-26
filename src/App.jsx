@@ -8,6 +8,7 @@ import {
   ChevronRight, Zap, Coffee
 } from 'lucide-react';
 import './App.css';
+import ProjectsSection from './components/ProjectsSection';
 
 /* Custom SVG icons for brands (lucide doesn't include brand icons) */
 const GithubIcon = ({ size = 24, ...props }) => (
@@ -303,6 +304,18 @@ function StarsBackground() {
   );
 }
 
+function GlobalBackground() {
+  return (
+    <div className="global-bg">
+      <StarsBackground />
+      <div className="hero-grid" />
+      <div className="hero-orb hero-orb-1" />
+      <div className="hero-orb hero-orb-2" />
+      <div className="hero-orb hero-orb-3" />
+    </div>
+  );
+}
+
 /* ── Navbar ─────────────────────────────────────────────────── */
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -393,12 +406,6 @@ function Hero() {
 
   return (
     <section className="hero" id="hero" ref={heroRef}>
-      <StarsBackground />
-      <div className="hero-grid" />
-      <div className="hero-orb hero-orb-1" />
-      <div className="hero-orb hero-orb-2" />
-      <div className="hero-orb hero-orb-3" />
-
       <div className="hero-content">
         <div className="hero-text-column">
           <div className="hero-badge" style={{ opacity: 0, transform: 'translateY(10px)' }}>
@@ -667,56 +674,9 @@ function Skills() {
   );
 }
 
-/* ── Projects ──────────────────────────────────────────────── */
-function Projects() {
-  const projectsRef = useRef(null);
-
-  useEffect(() => {
-    // const ctx = gsap.context(() => {
-    //   gsap.from('.project-card', {
-    //     scrollTrigger: { trigger: '.projects-grid', start: 'top 80%' },
-    //     y: 50, opacity: 0, stagger: 0.15, duration: 0.7, ease: 'power3.out'
-    //   });
-    // }, projectsRef);
-    // return () => ctx.revert();
-  }, []);
-
-  return (
-    <section className="projects" id="projetos" ref={projectsRef}>
-      <div className="section-header">
-        <span className="section-label">// Portfólio</span>
-        <h2 className="section-title">Projetos em Destaque</h2>
-        <p className="section-subtitle">Alguns dos projetos que construí — cada um com desafios únicos</p>
-      </div>
-
-      <div className="projects-grid">
-        {PROJECTS.map((project, i) => (
-          <div className={`project-card ${project.featured ? 'project-featured' : ''}`} key={project.id}>
-            <div className="project-image-container">
-              <img src={project.image} alt={project.name} className="project-image" style={project.imageStyle || {}} loading="lazy" />
-              <div className="project-image-overlay">
-                <a href={project.live} className="project-overlay-btn" target="_blank" rel="noopener noreferrer">
-                  <ExternalLink size={12} /> Live
-                </a>
-                <a href={project.github} className="project-overlay-btn" target="_blank" rel="noopener noreferrer">
-                  <GithubIcon size={12} /> Code
-                </a>
-              </div>
-            </div>
-            <div className="project-info">
-              <div className="project-number">Projeto {String(i + 1).padStart(2, '0')}</div>
-              <h3 className="project-name">{project.name}</h3>
-              <p className="project-desc">{project.desc}</p>
-              <div className="project-tags">
-                {project.tags.map(tag => <span key={tag} className="project-tag">{tag}</span>)}
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
-}
+/* ── Projects (now using ProjectsSection component) ────── */
+/* The rebuilt ProjectsSection with all 5 improvements is
+   imported from ./components/ProjectsSection.jsx */
 
 /* ── User Provided Robot (Replacing Stats) ───────────────── */
 function Stats() {
@@ -1049,12 +1009,13 @@ function App() {
     <>
       {loading && <Preloader onComplete={handlePreloaderComplete} />}
       <div style={{ opacity: loading ? 0 : 1, transition: 'opacity 0.6s ease' }}>
+        <GlobalBackground />
         <Navbar />
         <Hero />
         <About />
         <Skills />
         <Stats />
-        <Projects />
+        <ProjectsSection />
         <Experience />
         <Contact />
         <Footer />
