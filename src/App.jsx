@@ -892,7 +892,7 @@ function Contact() {
               <span>GitHub</span>
               <ChevronRight size={14} style={{ marginLeft: 'auto' }} />
             </a>
-            <a href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821/?skipRedirect=true" className="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821/" className="social-link" target="_blank" rel="noopener noreferrer">
               <LinkedinIcon size={18} />
               <span>LinkedIn</span>
               <ChevronRight size={14} style={{ marginLeft: 'auto' }} />
@@ -979,7 +979,7 @@ function Footer() {
           <h5>Social</h5>
           <a href="https://wa.me/5575997067931" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           <a href="https://github.com/jeanderson-silva8" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821/?skipRedirect=true" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
       <div className="footer-bottom">
