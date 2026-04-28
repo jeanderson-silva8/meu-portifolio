@@ -61,7 +61,7 @@ const PROJECTS = [
     image: '/lumina_analytics_cover.png',
     imageStyle: { objectFit: 'cover', objectPosition: 'top center' },
     live: 'https://marketing-site-black-pi.vercel.app',
-    github: 'https://github.com/silvajeanderson165-creator/Lumina-Booking-SaaS',
+    github: 'https://github.com/jeanderson-silva8/Lumina-Booking-SaaS',
     featured: true
   },
   {
@@ -76,7 +76,7 @@ const PROJECTS = [
     image: '/nexus_portal_cover.png',
     imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://nexus-portal-one.vercel.app',
-    github: 'https://github.com/silvajeanderson165-creator/nexus-portal',
+    github: 'https://github.com/jeanderson-silva8/nexus-portal',
     featured: true
   },
   {
@@ -87,7 +87,7 @@ const PROJECTS = [
     image: '/nord_nails_cover.jpg',
     imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://nord-nails.vercel.app',
-    github: 'https://github.com/silvajeanderson165-creator/nord-nails',
+    github: 'https://github.com/jeanderson-silva8/nord-nails',
   },
   {
     id: 11,
@@ -97,7 +97,7 @@ const PROJECTS = [
     image: '/la_maison_cover.png',
     imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://sitemd-sooty.vercel.app',
-    github: 'https://github.com/silvajeanderson165-creator/la-maison-restaurant-site',
+    github: 'https://github.com/jeanderson-silva8/la-maison-restaurant-site',
   },
   {
     id: 10,
@@ -109,7 +109,7 @@ const PROJECTS = [
     image: '/organiza_cover.jpeg',
     imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://organiza-dashboard-full.vercel.app/login',
-    github: 'https://github.com/silvajeanderson165-creator/organiza-dashboard-full',
+    github: 'https://github.com/jeanderson-silva8/organiza-dashboard-full',
   },
   {
     id: 9,
@@ -119,7 +119,7 @@ const PROJECTS = [
     image: '/mario_cover.jpg',
     imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://mario-bros-seven.vercel.app',
-    github: 'https://github.com/silvajeanderson165-creator/mario-bros',
+    github: 'https://github.com/jeanderson-silva8/mario-bros',
   },
   {
     id: 8,
@@ -129,7 +129,7 @@ const PROJECTS = [
     image: '/print_tradutor.jpg',
     imageStyle: { objectFit: 'cover', objectPosition: 'center' },
     live: 'https://pj-tradutor.vercel.app',
-    github: 'https://github.com/silvajeanderson165-creator/pj-tradutor',
+    github: 'https://github.com/jeanderson-silva8/pj-tradutor',
   },
   {
     id: 7,
@@ -142,7 +142,7 @@ const PROJECTS = [
     ],
     image: '/esaa_cover.jpg',
     live: 'https://thumbnail-forge-one.vercel.app',
-    github: 'https://github.com/silvajeanderson165-creator/thumbnail-forge',
+    github: 'https://github.com/jeanderson-silva8/thumbnail-forge',
   },
 
 ];
@@ -887,12 +887,12 @@ function Contact() {
               <span>WhatsApp</span>
               <ChevronRight size={14} style={{ marginLeft: 'auto' }} />
             </a>
-            <a href="https://github.com/silvajeanderson165-creator" className="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/jeanderson-silva8" className="social-link" target="_blank" rel="noopener noreferrer">
               <GithubIcon size={18} />
               <span>GitHub</span>
               <ChevronRight size={14} style={{ marginLeft: 'auto' }} />
             </a>
-            <a href="https://www.linkedin.com/in/jeanderson-silva-9a8844386/" className="social-link" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821/" className="social-link" target="_blank" rel="noopener noreferrer">
               <LinkedinIcon size={18} />
               <span>LinkedIn</span>
               <ChevronRight size={14} style={{ marginLeft: 'auto' }} />
@@ -978,8 +978,8 @@ function Footer() {
         <div className="footer-column">
           <h5>Social</h5>
           <a href="https://wa.me/5575997067931" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a href="https://github.com/silvajeanderson165-creator" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/jeanderson-silva-9a8844386/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/jeanderson-silva8" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
       <div className="footer-bottom">

@@ -39,7 +39,7 @@ Portfólio pessoal interativo que apresenta minha trajetória como **Desenvolved
 ## 🚀 Como Rodar
 
 ```bash
-git clone https://github.com/silvajeanderson165-creator/meu-portifolio.git
+git clone https://github.com/jeanderson-silva8/meu-portifolio.git
 cd meu-portifolio
 npm install
 npm run dev
