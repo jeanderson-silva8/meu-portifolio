@@ -200,7 +200,7 @@ const TERMINAL_COMMANDS = {
     '  📧 Email: jeanderson@email.com',
     '  💬 WhatsApp: disponível',
     '  🐙 GitHub: github.com/jeanderson',
-    '  🔗 LinkedIn: linkedin.com/in/jeanderson',
+    '  🔗 LinkedIn: linkedin.com/in/jeanderson-silva-rodrigues821',
   ],
   projects: [
     '  Total de projetos: <span class="accent-text">20+</span>',
@@ -228,16 +228,16 @@ const TERMINAL_COMMANDS = {
 /* ── Preloader ─────────────────────────────────────────────── */
 function Preloader({ onComplete }) {
   const [progress, setProgress] = useState(0);
-  const [text, setText] = useState('> initializing portfolio...');
-  const [status, setStatus] = useState('loading modules');
+  const [text, setText] = useState('> inicializando portfólio...');
+  const [status, setStatus] = useState('carregando módulos');
 
   useEffect(() => {
     const messages = [
-      { at: 20, text: '> loading assets...', status: 'fetching resources' },
-      { at: 45, text: '> compiling components...', status: 'building UI' },
-      { at: 70, text: '> establishing connection...', status: 'connecting' },
-      { at: 90, text: '> almost there...', status: 'finalizing' },
-      { at: 100, text: '> access granted.', status: 'ready' },
+      { at: 20, text: '> carregando recursos...', status: 'buscando arquivos' },
+      { at: 45, text: '> compilando componentes...', status: 'construindo interface' },
+      { at: 70, text: '> estabelecendo conexão...', status: 'conectando' },
+      { at: 90, text: '> quase lá...', status: 'finalizando' },
+      { at: 100, text: '> acesso concedido.', status: 'pronto' },
     ];
 
     let current = 0;
@@ -424,7 +424,7 @@ function Hero() {
 
           <p className="hero-subtitle" style={{ opacity: 0, transform: 'translateY(10px)' }}>
             Transformo ideias em experiências digitais de alto impacto.
-            Código limpo, design cinematográfico, resultados reais.
+            Código limpo, design imersivo, resultados mensuráveis.
           </p>
         </div>
 
@@ -975,12 +975,7 @@ function Footer() {
           <a href="#experiencia">Experiência</a>
           <a href="#contato">Contato</a>
         </div>
-        <div className="footer-column">
-          <h5>Social</h5>
-          <a href="https://wa.me/5575997067931" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          <a href="https://github.com/jeanderson-silva8" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </div>
+
       </div>
       <div className="footer-bottom">
         <div className="footer-status">
