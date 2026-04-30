@@ -892,7 +892,16 @@ function Contact() {
               <span>GitHub</span>
               <ChevronRight size={14} style={{ marginLeft: 'auto' }} />
             </a>
-            <a href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821/" className="social-link" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821"
+              className="social-link"
+              target="_blank"
+              rel="noopener noreferrer nofollow"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('https://www.linkedin.com/in/jeanderson-silva-rodrigues821', '_blank', 'noopener,noreferrer');
+              }}
+            >
               <LinkedinIcon size={18} />
               <span>LinkedIn</span>
               <ChevronRight size={14} style={{ marginLeft: 'auto' }} />
