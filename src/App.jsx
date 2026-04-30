@@ -896,10 +896,37 @@ function Contact() {
               href="https://www.linkedin.com/in/jeanderson-silva-rodrigues821"
               className="social-link"
               target="_blank"
-              rel="noopener noreferrer nofollow"
+              rel="noopener noreferrer"
               onClick={(e) => {
                 e.preventDefault();
-                window.open('https://www.linkedin.com/in/jeanderson-silva-rodrigues821', '_blank', 'noopener,noreferrer');
+                const profileId = 'jeanderson-silva-rodrigues821';
+                const webUrl = `https://www.linkedin.com/in/${profileId}`;
+                const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+                if (isMobile) {
+                  // LinkedIn mobile web tem bug que redireciona /in/ para /profile/in/ causando 404
+                  // Solução: abrir o app LinkedIn via deep link (que funciona perfeitamente)
+                  const appUrl = `linkedin://in/${profileId}`;
+                  
+                  // Listener para detectar se o app abriu (página fica hidden)
+                  const appTimeout = setTimeout(() => {
+                    // App não abriu em 1.5s → fallback para navegador web
+                    window.location.href = webUrl;
+                  }, 1500);
+
+                  const handleVisibility = () => {
+                    if (document.hidden) {
+                      clearTimeout(appTimeout);
+                      document.removeEventListener('visibilitychange', handleVisibility);
+                    }
+                  };
+                  document.addEventListener('visibilitychange', handleVisibility);
+
+                  // Tentar abrir o app do LinkedIn
+                  window.location.href = appUrl;
+                } else {
+                  window.open(webUrl, '_blank', 'noopener,noreferrer');
+                }
               }}
             >
               <LinkedinIcon size={18} />
