@@ -426,22 +426,6 @@ function Hero() {
             Transformo ideias em experiências digitais de alto impacto.
             Código limpo, design imersivo, resultados mensuráveis.
           </p>
-        </div>
-
-        <div className="hero-visual-column">
-          <div className="hero-video-wrapper" style={{ opacity: 0, transform: 'translateY(20px)' }}>
-            <div className="hero-video-inner">
-              <video
-                src="/hero-video.mp4"
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls={false}
-                className="hero-video"
-              />
-            </div>
-          </div>
 
           <div className="hero-ctas" style={{ opacity: 0, transform: 'translateY(10px)' }}>
             <a href="#projetos" className="btn-primary" onClick={e => { e.preventDefault(); document.getElementById('projetos')?.scrollIntoView({ behavior: 'smooth' }); }}>
@@ -450,6 +434,19 @@ function Hero() {
             <a href="#contato" className="btn-secondary" onClick={e => { e.preventDefault(); document.getElementById('contato')?.scrollIntoView({ behavior: 'smooth' }); }}>
               Entre em Contato
             </a>
+          </div>
+        </div>
+
+        <div className="hero-visual-column" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div className="hero-video-wrapper" style={{ opacity: 0, transform: 'translateY(20px)' }}>
+            <div className="hero-video-inner">
+              <img
+                src="/hero-image.jpeg"
+                alt="Jeanderson Silva Hero"
+                className="hero-image"
+                style={{ objectFit: 'cover', width: '100%', height: '100%' }}
+              />
+            </div>
           </div>
         </div>
 

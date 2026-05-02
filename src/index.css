@@ -532,6 +532,7 @@ body::before {
   .hero-visual-column {
     align-items: center;
     transform: translateX(0);
+    order: -1;
   }
 }
 
