@@ -8,6 +8,8 @@
 ![CSS3](https://img.shields.io/badge/CSS3-Custom-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
+🟢 **LIVE DEMO:** [Acesse o Portfólio Ao Vivo Aqui](https://meu-portifolio-two-ochre.vercel.app)
+
 ---
 
 ## 🎯 Sobre o Projeto
