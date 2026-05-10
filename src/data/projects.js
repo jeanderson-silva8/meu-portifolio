@@ -21,7 +21,7 @@ export const PROJECTS_DATA = [
   {
     id: 'flowsnyker',
     title: 'FlowSnyker',
-    description: 'Sabe aquela sensação de ter mil ideias na cabeça e nenhum lugar pra organizar? O FlowSnyker nasceu pra acabar com esse caos. É o seu quadro digital pessoal, onde cada tarefa vira um card que você arrasta, solta, prioriza e conclui no ritmo da sua mente. Visual escuro, fluido e viciante — feito para quem ama ver o progresso acontecer em tempo real, transformando o caos do dia a dia em fluxo puro de produtividade.',
+    description: 'Profissionais e equipes perdem energia preciosa tentando organizar o caos de tarefas em ferramentas rígidas ou lentas. O FlowSnyker nasceu para resolver exatamente essa dor. Mais que um quadro genérico, construí uma plataforma Kanban desenhada para fluidez extrema e feedback visual instantâneo. Em vez de sistemas engessados, você gerencia projetos com um drag & drop magnético no ritmo da sua mente. Além disso, a plataforma permite a verdadeira colaboração em equipe: você pode convidar pessoas para atuar no mesmo quadro em tempo real, com a garantia de uma arquitetura de compartilhamento blindada que valida acessos e protege seus dados sensíveis. Tudo isso envelopado numa interface de luxo, hiper-responsiva (Dark Mode e micro-interações) e totalmente segura.',
     shortDescription: 'Plataforma de gestão visual estilo Kanban com drag & drop fluido, múltiplos quadros, filtros por prioridade e colaboração em tempo real.',
     category: 'saas',
     size: 'premium',
