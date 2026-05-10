@@ -66,7 +66,7 @@ const PROJECTS = [
   },
   {
     id: 14,
-    name: 'NEXUS PORTAL — Experiência 3D Interativa',
+    name: 'Nexus Portal — Experiência 3D Interativa',
     desc: 'Desenvolvimento de uma experiência web 3D interativa de alto impacto visual. O projeto combina React e Three.js para apresentar um ambiente cinematográfico imersivo, focado na mais alta fluidez e qualidade gráfica. Demonstra profundo domínio na construção de ambientes responsivos em tempo real, renderização otimizada e engenharia visual diretamente no navegador.',
     tags: [
       'React 19', 'TypeScript', 'Three.js', 'React Three Fiber',
